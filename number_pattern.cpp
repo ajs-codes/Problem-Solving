@@ -48,6 +48,16 @@ void pattern4(int a) {
     }
     cout << endl;
 }
+void pattern5(int a) {
+    cout << "pattern 5" << endl;
+    for(int i = 1; i <= a; i++) {
+        for(int j = 1; j <= i; j++) {
+            printf("%02d ",i);
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
 int main() {
     int input = 0;
     cin >> input;
@@ -55,5 +65,6 @@ int main() {
     pattern2(input);
     pattern3(input);
     pattern4(input);
+    pattern5(input);
     return 0;
 }
