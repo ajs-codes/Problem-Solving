@@ -1,3 +1,4 @@
+// second round problem 2
 #include <iostream>
 #include <cstdio>
 
@@ -44,6 +45,7 @@ int main()
     cin >> cI.pn;
     cin >> cI.taxper;
     int times = 0;
+    
     for(struct Hotel i : c){
      calcHour = i.min;
      while(calcHour < cI.hour){
@@ -60,7 +62,25 @@ int main()
          }
      }
  }  
+ int amttime = 0;
+ for(struct Hotel i : c){
+     calcAmt = i.minCost;
+     while(calcAmt < cI.budget){
+         calcAmt += i.incCost;
+         amttime++;
+         if(calcAmt == cI.budget) {
+             selectedHotel = i.hotelId;
+             break;
+         }
+         if(calcAmt > cI.budget) {
+            calcAmt = 0;
+            amttime = 0;
+            break;
+         }
+     }
+ } 
     cout << selectedHotel;
     printf("%d",calcHour);
+    printf("%d",calcAmt);
     return 0;
 }
