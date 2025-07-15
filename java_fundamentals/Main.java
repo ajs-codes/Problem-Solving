@@ -11,7 +11,7 @@ public class Main {
         scanner.close();
     }
 
-    public static void add(int x, int y) {
+    private static void add(int x, int y) {
         int sum = x + y;
         System.out.println("The Result is " + sum);
     }
