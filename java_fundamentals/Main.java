@@ -12,6 +12,7 @@ public class Main {
     }
 
     public static void add(int x, int y) {
-        System.out.println("The Result is " + x + y);
+        int sum = x + y;
+        System.out.println("The Result is " + sum);
     }
 }
