@@ -31,5 +31,9 @@ public class Datatypes {
         // Scanner input = new Scanner(System.in);
         // double f2 = input.nextDouble();
         // System.out.println(f2);
+
+        // Explicit type casting (Narrowing)
+        int a = (int)(34.5); // 34
+        char c1 = (char)(65); // A
     }
 }
